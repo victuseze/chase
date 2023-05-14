@@ -1,0 +1,214 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+}
+.sub-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background: url(./background.jpg) no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.logo{
+    margin-bottom: 2rem;
+}
+.logo img{
+    width: 11rem;
+}
+.all{
+    background-color: whitesmoke;
+    padding: 0.8rem 2rem;
+}
+.input-page{
+    display: flex;
+    flex-direction: column;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+}
+.base-input{
+    display: flex;
+    margin-top: 1rem;
+}
+#username:hover, #password:hover{
+    border-bottom: 2px solid blue;
+}
+.remem, .tok{
+    display: flex;
+    margin: 1rem;
+}
+#remember, #token{
+    margin-right: 0.5rem;
+}
+#username, #password{
+    padding: 1rem;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+}
+#signin{
+    margin: 1rem;
+    padding: 0.3rem 7rem ;
+    border-radius: 3px;
+}
+#signin:hover{
+    background-color: blue;
+    border: 2px blue solid;
+    cursor: pointer;
+}
+#forget{
+    margin-bottom: 1rem;
+}
+.follow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+.line{
+    width: 98%;
+    height: 2px;
+    background-color: black;
+    margin: 1rem;
+}
+.follow .fa, p{
+    margin-right: 1rem;
+}
+.footer a, p{
+    color: grey;
+}
+.footer .contact{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1rem;
+}
+#incorrect{
+    margin-top: 1rem;
+}
+#forget-id{
+    display: none;
+}
+.mobile{
+    display: none;
+}
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#preloader img {
+    width: 100px;
+    height: 100px;
+}
+
+
+
+/* Media Query */
+/* Media Query */
+/* Media Query */
+
+@media screen and (max-width: 600px) {
+    body{
+        height: 100%;
+        width: 100%;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        margin-right: 0;
+        padding: 0;
+    }
+    .all{
+        display: flex;
+        flex-direction: column;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        width: 80%;
+        border: 1px solid rgb(187, 181, 181);
+    }
+    .sub-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+        background: url(./background.jpg) no-repeat;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+    #signin{
+        padding: 0.3rem 4rem;
+        width: 90%;
+        border-radius: 3px;
+        font-size: 1rem;
+    }
+    #signin p{
+        font-size: 0.6rem;
+    }
+    .logo{
+        margin-bottom: 8rem;
+    }
+    .logo img{
+        width: 11rem;
+    }
+    .logo{
+        font-size: 2rem;
+    }
+    .logo img{
+        width: 8rem;
+    }
+    #forget, #enroll{
+        display: none;
+    }
+    .footer .contact{
+        display: none;
+    }
+    .line{
+       display: none;
+    }
+    .mobile{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    hr{
+        width: 1.2px;
+        height: 2rem;
+        background-color: black;
+    }
+    .mobile a{
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin: 1rem;
+        color: blue;
+    }
+    #forget-id{
+        display: block;
+    }
+    .remem, .tok{
+        display: flex;
+    }
+    #contacts{
+        text-align: center;
+        display: block;
+    }
+}
